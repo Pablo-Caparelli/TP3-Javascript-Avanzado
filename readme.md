@@ -55,7 +55,7 @@ ID: 6 | Entregar el TP de JavaScript | Completada: false
 
 ### Ejemplo en pantalla (HTML):
 
-![Captura ejemplo en pantalla](./public/ImpresiónEnPantalla.jpeg)
+![Captura ejemplo en pantalla](./public/ImpresionEnPantalla.jpeg)
 
 ---
 

@@ -49,13 +49,13 @@ ID: 6 | Entregar el TP de JavaScript | Completada: false
 ✔️ Estudiar JavaScript
 ✔️ Ir al gimnasio
 
-### Ejemplo en pantalla (HTML):
-
-![Captura ejemplo en pantalla](./public/ImpresiónEnPantalla.jpeg)
-
 ![Captura ejemplo en consola 1](./public/ImpresionEnConsola1.jpeg)
 
 ![Captura ejemplo en consola 2](./public/ImpresionEnConsola2.jpeg)
+
+### Ejemplo en pantalla (HTML):
+
+![Captura ejemplo en pantalla](./public/ImpresiónEnPantalla.jpeg)
 
 ---
 

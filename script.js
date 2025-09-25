@@ -12,6 +12,7 @@ class Tarea {
     this.completada = completada;
   }
 
+  //para cambiar de false a true
   toggleEstado() {
     this.completada = !this.completada;
   }
@@ -30,8 +31,8 @@ class GestorTareas {
   }
 
   listarTareas() {
-    print("📋 Lista de tareas:");
-    console.log("📋 Lista de tareas:");
+    print("Lista de tareas");
+    console.log("Lista de tareas");
     this.tareas.forEach((t) =>
       console.log(`ID: ${t.id} | ${t.titulo} | Completada: ${t.completada}`)
     );
@@ -89,8 +90,8 @@ async function main() {
   gestor.agregarTarea("Ir a correr");
   gestor.agregarTarea("Entregar el TP de JavasCript");
 
-  print("\n📌 Nuevas tareas agregadas:");
-  console.log("\n📌 Nuevas tareas agregadas:");
+  print("\n Nuevas tareas agregadas:");
+  console.log("\n Nuevas tareas agregadas:");
 
   const nuevas = gestor.tareas.slice(-3);
   nuevas.map((t) => {
@@ -99,21 +100,15 @@ async function main() {
     console.log(mensaje);
   });
 
-  //print(nuevas);
-  //console.log(nuevas);
-
   // Filtrar completadas
   const completadas = gestor.listarCompletadas();
   print("\n👍 Tareas completadas: 🆗");
   console.log("\n👍 Tareas completadas: 🆗");
-  completadas.forEach((t) => console.log(`✔️ ${t.titulo}`));
-
-  //print(completadas);
-  //console.log(completadas);
-
-  // Extra: map de títulos
-  const titulos = gestor.tareas.map((t) => t.titulo);
-  console.log("\n📝 Solo títulos:", titulos);
+  completadas.forEach((t) => {
+    const mensaje = `✔️ ${t.id} | ${t.titulo}`;
+    print(mensaje);
+    console.log(mensaje);
+  });
 
   //4- Extra: Promise.all
   const [tareas, usuarios] = await Promise.all([
@@ -141,7 +136,6 @@ async function main() {
   for (let i = 0; i <= 6; i++) {
     const t = gestor.tareas[i];
     if (t) {
-      // para evitar error si no existe
       const mensaje = `ID: ${t.id} | ${t.titulo} | Completada: ${t.completada}`;
       print(mensaje);
       console.log(mensaje);
